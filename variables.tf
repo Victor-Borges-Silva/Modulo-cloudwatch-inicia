@@ -14,7 +14,8 @@ variable "statement_id" {
 }
 
 variable "aws_region_inicia" {
-  default = "sa-east-1"
+  type    = string
+  default = "us-west-1"
 }
 
 variable "lambda_function_arn_inicia" {

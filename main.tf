@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "sa-east-1"
-}
-
 resource "aws_cloudwatch_event_rule" "IniciaEC2" {
   name                = var.cloudwatch_inicia_name
   schedule_expression = "cron(0 8 ? * MON-FRI *)"
